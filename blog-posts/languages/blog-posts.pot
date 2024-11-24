@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-04 20:52+0545\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: footer.php:32
+msgid "Related Posts"
+msgstr ""
+
+#: footer.php:65 inc/frontpage-sections/posts-carousel.php:90
+#: template-parts/content-search.php:26 template-parts/content.php:26
+msgid " min"
+msgstr ""
+
+#: footer.php:125
+#, php-format
+msgctxt "1: Year, 2: Site Title with home URL"
+msgid "Copyright &copy; %1$s %2$s"
+msgstr ""
+
+#: footer.php:136
+#, php-format
+msgid "Theme: %1$s By %2$s."
+msgstr ""
+
+#: header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/demo-import.php:6
+msgid "Demo content files for Blog Posts Theme."
+msgstr ""
+
+#: inc/demo-import.php:8
+msgid "Click here for Demo File download"
+msgstr ""
+
+#: inc/customizer/categories.php:13
+msgid "Categories Section"
+msgstr ""
+
+#: inc/customizer/categories.php:32
+msgid "Enable Categories Section"
+msgstr ""
+
+#: inc/customizer/categories.php:52 inc/customizer/posts-carousel.php:52
+msgid "Section Title"
+msgstr ""
+
+#: inc/customizer/categories.php:84 inc/customizer/posts-carousel.php:84
+msgid "Section Subtitle"
+msgstr ""
+
+#: inc/customizer/categories.php:102 inc/customizer/posts-carousel.php:102
+msgid "View All Button Label"
+msgstr ""
+
+#: inc/customizer/categories.php:136 inc/customizer/posts-carousel.php:135
+msgid "View All Button Link"
+msgstr ""
+
+#: inc/customizer/categories.php:157
+#, php-format
+msgid "Category %d"
+msgstr ""
+
+#: inc/customizer/categories.php:180
+#, php-format
+msgid "Category Image %d"
+msgstr ""
+
+#: inc/customizer/customizer.php:48
+msgid "Grid Column Layout"
+msgstr ""
+
+#: inc/customizer/customizer.php:52
+msgid "Column 2"
+msgstr ""
+
+#: inc/customizer/customizer.php:53
+msgid "Column 3"
+msgstr ""
+
+#: inc/customizer/customizer.php:71
+msgid "Pagination Style"
+msgstr ""
+
+#: inc/customizer/customizer.php:75
+msgid "Default (Older/Newer)"
+msgstr ""
+
+#: inc/customizer/customizer.php:76
+msgid "Numeric"
+msgstr ""
+
+#: inc/customizer/posts-carousel.php:13
+msgid "Posts Carousel Section"
+msgstr ""
+
+#: inc/customizer/posts-carousel.php:32
+msgid "Enable Posts Carousel Section"
+msgstr ""
+
+#: inc/customizer/posts-carousel.php:44
+#: inc/frontpage-sections/posts-carousel.php:43
+msgid "Posts Carousel"
+msgstr ""
+
+#: inc/customizer/posts-carousel.php:94
+#: inc/frontpage-sections/posts-carousel.php:45
+msgid "View All"
+msgstr ""
+
+#: inc/customizer/posts-carousel.php:155
+msgid "Content type:"
+msgstr ""
+
+#: inc/customizer/posts-carousel.php:156
+msgid "Choose where you want to render the content from."
+msgstr ""
+
+#: inc/customizer/posts-carousel.php:161
+msgid "Post"
+msgstr ""
+
+#: inc/customizer/posts-carousel.php:162 inc/customizer/posts-carousel.php:201
+msgid "Category"
+msgstr ""
+
+#: inc/customizer/posts-carousel.php:180
+#, php-format
+msgid "Post %d"
+msgstr ""
+
+#: inc/frontpage-sections/categories.php:73
+msgid "View Posts"
+msgstr ""
+
+#: inc/upgrade-to-pro/class-customize.php:76
+msgid "Blog Posts Pro"
+msgstr ""
+
+#: inc/upgrade-to-pro/class-customize.php:77
+msgid "Go Pro"
+msgstr ""
+
+#: template-parts/content-search.php:13 template-parts/content.php:13
+msgid "Read More"
+msgstr ""

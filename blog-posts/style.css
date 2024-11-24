@@ -1,0 +1,273 @@
+/*!
+Theme Name: Blog Posts
+Theme URI: https://adorethemes.com/downloads/blog-posts/
+Author: Adore Themes
+Author URI: https://adorethemes.com/
+Description: Blog Posts is a minimalist and lightweight WordPress theme designed for creating professional blogging websites. The theme has a clean design and is ideal for various blog types, such as fashion, lifestyle, travel, food, and photography. Blog Posts is mobile-friendly and cross-browser compatible, making it accessible across various devices and screen sizes. The theme is also translation-ready, allowing you to create blogs in any language. Overall, Blog Posts offers a user-friendly interface, modern and creative design, and range of features suitable for building engaging and unique blog websites. Live preview : https://demo.adorethemes.com/blog-posts/
+Version: 1.0.3
+Requires at least: 5.0
+Requires PHP: 7.4
+Tested up to: 6.6
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: glowing-blog
+Text Domain: blog-posts
+Tags: custom-background, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, right-sidebar, blog, one-column, portfolio, photography, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Blog Posts is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+
+*/
+
+/* Root
+	========================================================================== */
+	:root {
+		--body-background: #f4f3ee;
+		--primary-color: #bf0603;
+		--glow-box-shadow-color: #463f3a;
+		--color-text: #22223b;
+	}
+
+/* Start categories section
+--------------------------------------------- */
+.categories-section .categories-wrapper {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.categories-section .category-single {
+	aspect-ratio: 4/2.8;
+	position: relative;
+	overflow: hidden;
+	border-radius: 15px;
+	box-shadow: var(--shadow);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: var(--transition);
+	background-position: center;
+	box-shadow: var(--glow-medium-shadow);
+	border: 1px solid var(--glow-border-color);
+}
+
+.categories-section .category-single:focus-within,
+.categories-section .category-single:hover{
+	box-shadow: var(--glow-box-shadow);
+}
+
+.categories-section .category-single>a {
+	position: absolute;
+	inset: 0;
+	text-decoration: none;
+	text-align: start;
+	display: block;
+	color: #fff;
+	line-height: 1.2;
+	font-size: var(--font-size-md);
+	z-index: 3;
+	font-weight: bold;
+	isolation: isolate;
+}
+
+.categories-section .category-single>a::before {
+	position: absolute;
+	content: "";
+	inset: 0;
+	z-index: -1;
+	opacity: .2;
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.categories-section .category-single>a>.title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 12px 20px;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.categories-section .category-single .count {
+	position: absolute;
+	inset-inline-start: 20px;
+	top: 20px;
+	color: var(--color-text);
+	font-weight: bold;
+
+}
+.categories-section .category-single .count .number{
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	z-index: 3;
+	font-size: var(--font-size-base);
+	background: var(--post-item-background);
+	box-shadow: var(--glow-small-shadow);
+	border: 1px solid var(--glow-border-color);
+}
+.categories-section .category-single .count .view{
+	position: absolute;
+	z-index: 1;
+	inset-inline-start: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: var(--font-size-sm);
+	background: var(--post-item-background);
+	border-radius: 25px;
+	white-space: nowrap;
+	padding: 0px 15px;
+	height: 30px;
+	line-height: 30px;
+	margin-inline-start: 5px;
+	opacity: 0;
+	transition: all 300ms ease;
+	box-shadow: var(--glow-small-shadow);
+	border: 1px solid var(--glow-border-color);
+}
+.categories-section .category-single:focus-within .count .view,
+.categories-section .category-single:hover .count .view{
+	opacity: 1;
+}
+/* End categories section
+--------------------------------------------- */
+
+/* Start Post Carousel Section
+--------------------------------------------- */
+
+.post-carousel-section .post-carousel-wrapper .post-item.overlay-post {
+	aspect-ratio: 3/3.2;
+	border-radius: 0;
+}
+
+.post-carousel-section .post-carousel-wrapper{
+	overflow: hidden;
+}
+.post-carousel-section .post-carousel-wrapper .slick-list{
+	margin-inline: -15px;
+}
+.post-carousel-section .post-carousel-wrapper .slick-slide{
+	padding-inline: 15px;
+	padding-block-end: 5px;
+}
+.post-carousel-section .post-carousel-wrapper .slick-dots{
+	margin-top: 20px;
+}
+.post-carousel-section .post-carousel-wrapper .post-item.overlay-post {
+	border-radius: 5px;
+}
+
+/* End Post Carousel Section
+--------------------------------------------- */
+
+/* Archive grid layout
+--------------------------------------------- */
+
+/* grid layout */
+.theme-archive-layout.grid-layout {
+	display: flex;
+	flex-wrap: wrap;
+	margin-inline: -15px;
+}
+
+
+@media (min-width: 576px) {
+	.theme-archive-layout.grid-layout article {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.theme-archive-layout.grid-layout article {
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.theme-archive-layout.grid-layout article {
+		width: 33.33%;
+	}
+}
+
+@media (min-width: 992px) {
+	.theme-archive-layout.grid-layout.grid-column-3 article {
+		width: 33.33%;
+	}
+}
+
+.theme-archive-layout.grid-layout article {
+	padding-inline: 15px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.theme-archive-layout.grid-layout article:not(.has-post-thumbnail) .post-item {
+	padding: 15px;
+}
+.theme-archive-layout.grid-layout article:not(.has-post-thumbnail) .post-item .post-item-image{
+	box-shadow: unset;
+    border: unset;
+    overflow: visible;
+}
+.theme-archive-layout.grid-layout article:not(.has-post-thumbnail) .read-time-comment {
+	padding-block: 5px;
+	padding-inline: 0;
+}
+.theme-archive-layout.grid-layout article:not(.has-post-thumbnail) .post-item .post-item-image .entry-cat {
+	position: unset;
+	padding: 0;
+}
+
+/* grid layout */
+
+@media (min-width: 576px) {
+	.theme-archive-layout.grid-layout article {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.theme-archive-layout.grid-layout article {
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.theme-archive-layout.grid-layout article {
+		width: 33.33%;
+	}
+}
+
+@media (min-width: 992px) {
+	.theme-archive-layout.grid-layout.grid-column-2 article {
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.theme-archive-layout.grid-layout.grid-column-3 article {
+		width: 33.33%;
+	}
+}
+
+/* Override pagination CSS
+--------------------------------------------- */
+nav.navigation.pagination {
+	display: block !important;
+}
+
+/* Pagination CSS
+--------------------------------------------- */
+nav.navigation.pagination .nav-links span, nav.navigation.pagination .nav-links a {
+	border-radius: 5px;
+	box-shadow: var(--glow-small-shadow);
+	background-color: var(--post-item-background);
+}

@@ -1,0 +1,6 @@
+li#accordion-section-glowing-blog,
+li#customize-control-glowing_blog_pagination_type,
+li#customize-control-glowing_blog_loadmore_text_label,
+li#accordion-section-glowing_blog_popular_posts_section {
+	display: none !important;
+}
